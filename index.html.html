@@ -1,0 +1,524 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alberto Clocks - Timeless Elegance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script/main.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Alberto<span>Clocks</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Shop</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Timeless Elegance</h1>
+            <p>Discover our exquisite collection of handcrafted clocks that blend precision engineering with artistic design.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+        <div class="container">
+            <h2 class="section-title">Featured Collections</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <img src="https://th.bing.com/th/id/OIF.TvI0i8OAaVGS2M2Z2ekyNA?w=248&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Vintage Collection">
+                        <h3>Vintage Collection</h3>
+                        <div class="price">From $299.99</div>
+                        <a href="#" class="btn btn-outline view-product" data-id="1">View Collection</a>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://ts2.mm.bing.net/th?id=OIP.mgk97fYbSnoFS4AXA7GlKQHaMc&pid=15.1" alt="D&G Collection">
+                        <h3>D&G Collection</h3>
+                        <div class="price">From $199.99</div>
+                        <a href="#" class="btn btn-outline view-product" data-id="2">View Collection</a>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://th.bing.com/th/id/OIF.cVC2bioMhxih8tqlYL9yXw?w=148&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Modern Collection">
+                        <h3>Modern Collection</h3>
+                        <div class="price">From $1999.99</div>
+                        <a href="#" class="btn btn-outline view-product" data-id="3">View Collection</a>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1539874754764-5a96559165b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Luxury Collection">
+                        <h3>Luxury Collection</h3>
+                        <div class="price">From $999.99</div>
+                        <a href="#" class="btn btn-outline view-product" data-id="4">View Collection</a>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://th.bing.com/th?id=OIF.MULJuYnJw8y%2fZ9GUuDCv7Q&w=138&h=349&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Grandfather Clocks">
+                        <h3>Grandfather Clocks</h3>
+                        <div class="price">From $1,299.99</div>
+                        <a href="#" class="btn btn-outline view-product" data-id="5">View Collection</a>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://th.bing.com/th/id/OIP.NlDWm-2FuQX1C1dwHS7IBAHaHa?w=217&h=217&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Wall Clocks">
+                        <h3>Wall Clocks</h3>
+                        <div class="price">From $149.99</div>
+                        <a href="#" class="btn btn-outline view-product" data-id="6">View Collection</a>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.GKEfxZsyGiJxZSrUGWxrKAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Desk Clocks">
+                        <h3>Desk Clocks</h3>
+                        <div class="price">From $89.99</div>
+                        <a href="#" class="btn btn-outline view-product" data-id="7">View Collection</a>
+                    </div>
+            <div class="carousel-indicators">
+                <div class="indicator active"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Our Best Sellers</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-badge">Sale</div>
+                    <div class="product-img">
+                        <img src="https://th.bing.com/th/id/OIP.HrjqZCLKsJOzqSmk38pbrwHaE6?w=286&h=189&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Grandfather Clock">
+                        <div class="product-actions">
+                            <button class="quick-view" data-id="1"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Vintage Grandfather Clock</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(24)</span>
+                        </div>
+                        <p>Handcrafted mahogany grandfather clock with Westminster chime</p>
+                        <div class="price-container">
+                            <div>
+                                <span class="old-price">$1,499.99</span>
+                                <span class="price">$1,299.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">Popular</div>
+                    <div class="product-img">
+                        <img src="https://th.bing.com/th/id/OIP.ZIZA1sRkyalwc7NhplJvfQHaHa?w=199&h=199&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Modern Wall Clock">
+                        <div class="product-actions">
+                            <button class="quick-view" data-id="2"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Minimalist Wall Clock</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(42)</span>
+                        </div>
+                        <p>Sleek 24-inch diameter wall clock with silent movement</p>
+                        <div class="price-container">
+                            <div>
+                                <span class="price">$199.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://tse1.mm.bing.net/th/id/OIP.YO2BI2SS_mQJl_rb3m_bnAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Luxury Watch">
+                        <div class="product-actions">
+                            <button class="quick-view" data-id="3"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Swiss Chronograph</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(18)</span>
+                        </div>
+                        <p>Precision Swiss-made automatic watch with sapphire crystal</p>
+                        <div class="price-container">
+                            <div>
+                                <span class="price">$999.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">New</div>
+                    <div class="product-img">
+                        <img src="https://th.bing.com/th/id/OIP.rxbotxdbn2Kfin042rlq1QHaHa?w=193&h=193&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Alarm Clock">
+                        <div class="product-actions">
+                            <button class="quick-view" data-id="4"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+                            <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Retro Alarm Clock</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <span>(31)</span>
+                        </div>
+                        <p>Vintage-style alarm clock with USB charging port</p>
+                        <div class="price-container">
+                            <div>
+                                <span class="price">$89.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Alberto Clocks Workshop">
+                </div>
+                <div class="about-text">
+                    <h2>Crafting Timepieces Since 1952</h2>
+                    <p>Founded by master clockmaker Alberto Moretti in Florence, Italy, Alberto Clocks has been creating exquisite timepieces for over six decades. What began as a small workshop crafting bespoke clocks for local nobility has grown into an internationally renowned brand.</p>
+                    <p>Today, we continue Alberto's tradition of excellence, blending time-honored craftsmanship with modern precision engineering. Each clock is still assembled by hand in our Florence workshop, ensuring the highest quality and attention to detail.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Premium Materials</h4>
+                                <p>We source only the finest woods, metals, and mechanisms from around the world.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Precision Engineering</h4>
+                                <p>Each movement is tested for accuracy and reliability before leaving our workshop.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Sustainable Practices</h4>
+                                <p>We're committed to environmentally responsible manufacturing and sourcing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Address</h4>
+                            <p>123 Horology Street, Florence, Italy 50123</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+256 7123 123 123">+256 7123 123 123</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@albertoclocks.com">info@albertoclocks.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Hours</h4>
+                            <p>Monday - Friday: 9am - 4pm<br>Saturday: 10am - 4pm<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column footer-about">
+                    <h3>Alberto Clocks</h3>
+                    <p>Specializing in handcrafted timepieces that blend traditional craftsmanship with modern design. Each clock is a testament to our passion for horology and commitment to excellence.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Shop</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Mukwano Street, Florence, Italy 50123</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@albertoclocks.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest collections, exclusive offers, and horology insights.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" class="newsletter-input" required>
+                        <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Alberto Clocks. All Rights Reserved. Crafted with <i class="fas fa-heart" style="color: #e74c3c;"></i> in Florence, Italy.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Detail Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Product Details</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="product-gallery">
+                    <div class="thumbnail-container">
+                        <img src="https://images.unsplash.com/photo-1549383049-6047a6a352c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Thumbnail 1" class="thumbnail active">
+                        <img src="https://images.unsplash.com/photo-1497262693247-aa258f96c4f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Thumbnail 2" class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1539874754764-5a96559165b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Thumbnail 3" class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Thumbnail 4" class="thumbnail">
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1549383049-6047a6a352c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Main Product Image" class="main-image">
+                </div>
+                <div class="product-details">
+                    <h2>Vintage Grandfather Clock</h2>
+                    <div class="product-meta">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="product-review-count">24 Reviews</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="product-old-price">$1,499.99</span>
+                        <span>$1,299.99</span>
+                        <span class="product-discount">Save $200</span>
+                    </div>
+                    <p class="product-description">
+                        This exquisite grandfather clock is crafted from solid mahogany with hand-carved details. Features a precision quartz movement with Westminster chime that can be silenced when desired. The 8-day movement ensures accurate timekeeping with minimal maintenance. Includes a tempered glass door and brass pendulum with decorative filigree.
+                    </p>
+                    <div class="product-options">
+                        <label class="option-title">Finish:</label>
+                        <select class="option-select">
+                            <option>Mahogany (shown)</option>
+                            <option>Cherry</option>
+                            <option>Walnut</option>
+                            <option>Oak</option>
+                        </select>
+                        <label class="option-title">Chime Selection:</label>
+                        <select class="option-select">
+                            <option>Westminster</option>
+                            <option>Whittington</option>
+                            <option>St. Michael</option>
+                            <option>Silent</option>
+                        </select>
+                    </div>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <div class="shipping-calculator">
+                        <div class="shipping-title">
+                            <i class="fas fa-truck"></i>
+                            <span>Shipping Calculator</span>
+                        </div>
+                        <form class="shipping-form">
+                            <input type="text" placeholder="ZIP Code" class="shipping-input">
+                            <button type="button" class="btn">Calculate</button>
+                        </form>
+                        <div class="shipping-result">
+                            Estimated delivery: 5-7 business days
+                        </div>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn add-to-cart-modal">Add to Cart</button>
+                        <button class="btn btn-outline add-to-wishlist-modal">Wishlist</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-header">
+            <div class="cart-title">Your Cart (3)</div>
+            <span class="close-cart">&times;</span>
+        </div>
+        <div class="cart-body">
+            <div class="cart-item">
+                <img src="https://images.unsplash.com/photo-1549383049-6047a6a352c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Product" class="cart-item-img">
+                <div class="cart-item-details">
+                    <h4>Vintage Grandfather Clock</h4>
+                    <div class="cart-item-price">$1,299.99</div>
+                    <div class="cart-item-quantity">
+                        <button class="quantity-down">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-up">+</button>
+                    </div>
+                </div>
+                <div class="remove-item">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Product" class="cart-item-img">
+                <div class="cart-item-details">
+                    <h4>Minimalist Wall Clock</h4>
+                    <div class="cart-item-price">$199.99</div>
+                    <div class="cart-item-quantity">
+                        <button class="quantity-down">-</button>
+                        <input type="number" value="2" min="1" class="quantity-input">
+                        <button class="quantity-up">+</button>
+                    </div>
+                </div>
+                <div class="remove-item">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="cart-summary">
+            <div class="cart-total">
+                <span>Subtotal:</span>
+                <span>$1,699.97</span>
+            </div>
+            <div class="cart-actions">
+                <button class="btn">Checkout</button>
+                <button class="btn btn-outline">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
